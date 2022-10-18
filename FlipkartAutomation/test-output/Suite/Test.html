@@ -1,0 +1,178 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>8/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Oct 18 16:39:12 IST 2022</td>
+</tr>
+<tr><td>Total time:</td><td>466 seconds (466794 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.example.demo.Image_Load.test1()'><b>test1</b><br>Test class: com.example.demo.Image_Load<br/>
+<a href="#Output-632206764" onClick='toggleBox("Output-632206764", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-632206764" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-632206764">
+Image is not present before scrolling<br/>
+Image is present after scrolling<br/>
+</div>
+</td>
+<td></td>
+<td>71</td>
+<td>com.example.demo.Image_Load@4c1909a3</td></tr>
+<tr>
+<td title='com.example.demo.Navigate_bottom.test1()'><b>test1</b><br>Test class: com.example.demo.Navigate_bottom<br/>
+<a href="#Output-954928973" onClick='toggleBox("Output-954928973", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-954928973" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-954928973">
+Navigates to the bottom of the page<br/>
+</div>
+</td>
+<td></td>
+<td>36</td>
+<td>com.example.demo.Navigate_bottom@4659191b</td></tr>
+<tr>
+<td title='com.example.demo.Navigate_Flipkart.test1()'><b>test1</b><br>Test class: com.example.demo.Navigate_Flipkart<br/>
+<a href="#Output-1281361915" onClick='toggleBox("Output-1281361915", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1281361915" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1281361915">
+Flipkart url matched!!<br/>
+Flipkart title matched!!<br/>
+Navigated to Flipkart!!<br/>
+</div>
+</td>
+<td></td>
+<td>46</td>
+<td>com.example.demo.Navigate_Flipkart@1b11171f</td></tr>
+<tr>
+<td title='com.example.demo.ContentRefresh.test1()'><b>test1</b><br>Test class: com.example.demo.ContentRefresh<br/>
+<a href="#Output-1583020257" onClick='toggleBox("Output-1583020257", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1583020257" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1583020257">
+Total Content Load Time while Scrolling: 45 milliseconds<br/>
+</div>
+</td>
+<td></td>
+<td>53</td>
+<td>com.example.demo.ContentRefresh@1151e434</td></tr>
+<tr>
+<td title='com.example.demo.Scroll_Feature.test1()'><b>test1</b><br>Test class: com.example.demo.Scroll_Feature<br/>
+<a href="#Output-1798636297" onClick='toggleBox("Output-1798636297", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1798636297" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1798636297">
+Scrollbar is present.<br/>
+</div>
+</td>
+<td></td>
+<td>95</td>
+<td>com.example.demo.Scroll_Feature@2dc54ad4</td></tr>
+<tr>
+<td title='com.example.demo.PageLoad.test1()'><b>test1</b><br>Test class: com.example.demo.PageLoad<br/>
+<a href="#Output-1602069459" onClick='toggleBox("Output-1602069459", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1602069459" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1602069459">
+Page load time exceeded the limit<br/>
+</div>
+</td>
+<td></td>
+<td>45</td>
+<td>com.example.demo.PageLoad@4b8ee4de</td></tr>
+<tr>
+<td title='com.example.demo.Imageload_Screenheight.test1()'><b>test1</b><br>Test class: com.example.demo.Imageload_Screenheight<br/>
+<a href="#Output-1626800713" onClick='toggleBox("Output-1626800713", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1626800713" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1626800713">
+Images are loaded and visible till the screen height only<br/>
+</div>
+</td>
+<td></td>
+<td>44</td>
+<td>com.example.demo.Imageload_Screenheight@27f981c6</td></tr>
+<tr>
+<td title='com.example.demo.ProductSearch.test1()'><b>test1</b><br>Test class: com.example.demo.ProductSearch<br/>
+<a href="#Output-386040589" onClick='toggleBox("Output-386040589", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-386040589" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-386040589">
+Product searched successfully<br/>
+</div>
+</td>
+<td></td>
+<td>48</td>
+<td>com.example.demo.ProductSearch@659499f1</td></tr>
+</table><p>
+</body>
+</html>
